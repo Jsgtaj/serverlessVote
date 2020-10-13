@@ -18,7 +18,7 @@ exports.handler = async event => {
       voteArr = [0, 0, 0, 0];
       break;
     default:
-      return voteArr;
+      voteArr = voteArr;
   }
   const json = JSON.stringify(voteArr);
   return {
