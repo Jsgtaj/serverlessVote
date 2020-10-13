@@ -20,7 +20,7 @@ exports.handler = async event => {
     default:
       return voteArr;
   }
-  const json = JSON.strigify(voteArr);
+  const json = JSON.stringify(voteArr);
   return {
     statusCode: 200,
     headers: { "Access-Control-Allow-Origin": "*" },
